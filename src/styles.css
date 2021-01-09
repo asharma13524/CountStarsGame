@@ -1,0 +1,93 @@
+html {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+.game {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.body {
+  display: flex;
+}
+
+.help {
+  color: rgb(207, 50, 50);
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.title {
+  text-align: center;
+  color: #b82d5b;
+  font-weight: bold;
+}
+
+.left {
+  text-align: center;
+  width: 50%;
+  border: thick solid rgb(90, 197, 152);
+}
+
+.right {
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+  border: thick solid rgb(90, 197, 152);
+}
+
+.star {
+  display: inline-block;
+  margin: 0 15px;
+  color: red;
+}
+
+.star:after {
+  content: "\2605";
+  font-size: 45px;
+}
+.number {
+  background-color: rgb(25, 150, 233);
+  border: thin solid rgb(83, 206, 109);
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.number:focus,
+.number:active {
+  outline: none;
+  border: thin solid #ddd;
+}
+
+.timer {
+  color: #666;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.game-done .message {
+  font-size: 250%;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.play-again-button {
+  background: #bb7ad1;
+  color: #ffa260;
+  border: 2px solid;
+  padding: 1em 2em;
+  font-size: 1em;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.play-again-button:hover {
+  border-color: #f1ff5c;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+  transform: translateY(-0.2em);
+  cursor: pointer;
+}
